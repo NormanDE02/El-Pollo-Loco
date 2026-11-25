@@ -1,13 +1,10 @@
 let canvas;
-let ctx;
-let charakter = new Image();
+let world;
 
 function init() {
     canvas = document.getElementById('canvas');
-    ctx = canvas.getContext('2d');
+    world = new World(canvas);
 
-
-    charakter.src = '../img/2_character_pepe/1_idle/idle/I-1.png';
-
-    ctx.drawImage( charakter, 20, 20, 50, 150);
+    console.log('My Character is', world.enemies);
+    
 }
